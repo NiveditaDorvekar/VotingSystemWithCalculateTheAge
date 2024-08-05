@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter System</title> 
+    <link rel="stylesheet" href="voter.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Voter System</h1>
+        <form id="voterForm">
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob" class="input-field" required>
+    <button type="button" onclick="calculateAge()" class="btn">Calculate Age</button>
+    <p id="ageError" class="error"></p>
+    <p id="ageDisplay" class="age"></p>
+    <button type="submit" class="btn">Check Eligibility</button>
+    <p id="eligibilityError" class="error"></p>
+  </form>
+  </div>
+  <script src="voter.js"></script>
+</body>
+</html>

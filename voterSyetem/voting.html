@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vote</title>
+  <link rel="stylesheet" href="voting.css">
+</head>
+<body>
+ <div class="container">
+  <h1 class="heading">Vote</h1>
+  <form id="voteForm">
+    <label for="candidate">Select Candidate:</label>
+    <select id="candidate" name="candidate" class="input-field" required>
+      <option value="candidate1">ABC (BJP)</option>
+      <option value="candidate2">DEF (Congress)</option>
+      <option value="candidate3">GHI (AAP)</option>
+    </select>
+    <button type="submit">Vote</button>
+    <p id="voteMessage" class="message"></p>
+  </form>
+  </div>
+  <script src="voteScript.js"></script>
+</body>
+</html>
